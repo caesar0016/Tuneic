@@ -57,21 +57,35 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Forgot Password?"
+            android:text="@string/underline_forgot_password"
             android:textColor="@color/white"
             android:layout_marginTop="10dp"
             android:id="@+id/btnForgotPass"
             />
 
     </LinearLayout>
-        <TextView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Don't have an account? Sign up!"
+            android:orientation="horizontal"
+            android:gravity="center"
             android:layout_below="@+id/linearLogin"
-            android:layout_centerHorizontal="true"
             android:layout_marginTop="150dp"
-            android:textColor="@color/white"
-            android:id="@+id/btnSignUp"
-            />
+            android:layout_centerHorizontal="true"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account?"
+                android:textColor="@color/white"
+                android:layout_marginRight="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/underline_Signup"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
 </RelativeLayout>

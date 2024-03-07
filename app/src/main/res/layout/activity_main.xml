@@ -16,7 +16,7 @@
         android:layout_centerInParent="true"
         android:gravity="center"
         android:orientation="vertical"
-        android:layout_margin="50dp">
+        android:layout_margin="30dp">
 
         <EditText
             android:id="@+id/edTxtUsername"
@@ -54,12 +54,12 @@
             android:text="Login" />
 
         <TextView
-            android:id="@+id/btnForgotPass"
+            android:id="@+id/tvForgotPass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="@string/underline_forgot_password"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"/>
 
     </LinearLayout>
 
@@ -70,20 +70,23 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="150dp"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:id="@+id/linearCreateAcc">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="5dp"
             android:text="Don't have an account?"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:id="@+id/tvCreate01"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/underline_Signup"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:id="@+id/tvCreate02"/>
     </LinearLayout>
 
 </RelativeLayout>

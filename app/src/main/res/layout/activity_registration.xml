@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registration"
+    android:background="@drawable/bg_no_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/linearMargin">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearRegistration"
+        android:paddingHorizontal="20dp"
+        android:layout_below="@+id/linearMargin"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColorHint="@color/white"
+            android:background="@drawable/rounded_corner"
+            android:padding="13dp"
+            android:layout_marginTop="15dp"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:textColorHint="@color/white"
+            android:background="@drawable/rounded_corner"
+            android:padding="13dp"
+            android:layout_marginTop="15dp"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColorHint="@color/white"
+            android:background="@drawable/rounded_corner"
+            android:padding="13dp"
+            android:layout_marginTop="15dp"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:textColorHint="@color/white"
+            android:background="@drawable/rounded_corner"
+            android:padding="13dp"
+            android:layout_marginTop="15dp"
+
+            />
+
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="80dp"
+        android:text="Sign in"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:layout_below="@+id/linearRegistration"
+        android:id="@+id/btnSign"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/btnSign"
+        android:layout_marginTop="50dp"
+        android:id="@+id/linearGoogleFb"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:layout_marginHorizontal="50dp"
+            android:textColorHighlight="@color/white"
+            android:text="Sign in with Google"
+            android:drawableLeft="@drawable/ic_google"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:layout_marginHorizontal="50dp"
+            android:textColorHighlight="@color/white"
+            android:text="Sign in with Facebook"
+            android:drawableLeft="@drawable/ic_fb"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearGoogleFb"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:layout_marginLeft="70dp"/>
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/underline_login"
+            android:textColor="@color/white"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

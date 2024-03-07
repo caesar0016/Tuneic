@@ -2,4 +2,6 @@
     <string name="app_name">Tuneic</string>
     <string name="underline_forgot_password"><u>Forgot Password?</u></string>
     <string name="underline_Signup"><u>Sign up!</u></string>
+    <string name="underline_login"><u>Log in!</u></string>
+
 </resources>
